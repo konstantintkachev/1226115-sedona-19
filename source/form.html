@@ -51,32 +51,46 @@
         </fieldset>
         <fieldset class="search-form__desc">
           <legend class="search-form__title">Контактная информация:</legend>
-          <label class="search-form__field-name search-form__facts" for="mobile">Контактный телефон*:
-            <input class="search-form__field-input search-form__user-editor" type="text" name="mobile" value="Введите телефон" id="mobile">
+          <label class="search-form__field-name search-form__field-name--facts" for="mobile">Контактный телефон*:
+            <input class="search-form__field-input search-form__user-editor" type="tel" name="mobile" value="Введите телефон" id="mobile">
             <img src="img/phone-svg.svg" width="18" height="18" alt="Телефон">
           </label>
-          <label class="search-form__field-name search-form__facts" for="email">Электронная почта*:
-            <input class="search-form__field-input search-form__user-editor" type="text" name="email" value="Введите e-mail" id="email" required>
+          <label class="search-form__field-name search-form__field-name--facts" for="email">Электронная почта*:
+            <input class="search-form__field-input search-form__user-editor" type="email" name="email" value="Введите e-mail" id="email" required>
             <img src="img/mail-svg.svg" width="16" height="12" alt="Конверт">
           </label>
         </fieldset>
         <fieldset class="search-form__desc">
           <legend class="search-form__title">Ваше общее впечатление:</legend>
-          <input class="search-form__reviews" type="radio" name="rating" value="Скорее положительное" checked="checked"> Скорее положительное
-          <input class="search-form__reviews" type="radio" name="rating" value="Скорее отрицательное"> Скорее отрицательное
-          <input class="search-form__reviews" type="radio" name="rating" value="Затрудняюсь ответить"> Затрудняюсь ответить
+          <label class="search-form__inner" for="positively">
+            <input class="search-form__radio" type="radio" name="rating" value="Скорее положительное" checked="checked" id="positively"> Скорее положительное
+          </label>
+          <label class="search-form__inner" for="negatively">
+            <input class="search-form__radio" type="radio" name="rating" value="Скорее отрицательное" id="negatively"> Скорее отрицательное
+          </label>
+          <label class="search-form__inner" for="no-answer">
+            <input class="search-form__radio" type="radio" name="rating" value="Затрудняюсь ответить" id="no-answer"> Затрудняюсь ответить
+          </label>
         </fieldset>
         <fieldset class="search-form__desc">
           <legend class="search-form__title">Посещенные достопримечательности:</legend>
-          <input class="search-form__visited places" type="checkbox" name="place" value="Мост дьявола" checked="checked"> Мост дьявола
-          <input class="search-form__visited places" type="checkbox" name="place" value="Гора-колокол" checked="checked"> Гора-Колокол
-          <input class="search-form__visited places" type="checkbox" name="place" value="Слайд-парк" checked="checked"> Слайд-парк
-          <input class="search-form__visited places" type="checkbox" name="place" value="Красные скалы"> Красные скалы
+          <label class="search-form__inner" for="bridge">
+            <input class="search-form__visited places" type="checkbox" name="place" value="Мост дьявола" checked="checked" id="bridge"> Мост дьявола
+          </label>
+          <label class="search-form__inner" for="mountain">
+            <input class="search-form__visited places" type="checkbox" name="place" value="Гора-колокол" checked="checked" id="mountain"> Гора-Колокол
+          </label>
+          <label class="search-form__inner" for="park">
+            <input class="search-form__visited places" type="checkbox" name="place" value="Слайд-парк" checked="checked" id="park"> Слайд-парк
+          </label>
+          <label class="search-form__inner" for="rocks">
+            <input class="search-form__visited places" type="checkbox" name="place" value="Красные скалы" id="rocks"> Красные скалы
+          </label>
         </fieldset>
         <fieldset class="search-form__desc">
           <legend class="search-form__title">Опишите свои эмоции:</legend>
-          <textarea name="comment" cols="25" rows="5">Опишите подробно все свои восторги</textarea>
-          <button class="search-form__btn" name="button" type="button">Отправить отзыв</button>
+          <textarea name="comment" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <button class="search-form__btn" name="button" type="submit">Отправить отзыв</button>
         </fieldset>
       </form>
       </section>
