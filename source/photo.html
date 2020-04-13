@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -33,8 +34,10 @@
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <section class="gallery">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="gallery__article">
+          <h2 class="gallery__title">Фото и видео</h2>
+          <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
         <div class="gallery__content">
             <img class="gallery__picture" src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Закат">
             <div class="gallery__author">
@@ -101,18 +104,26 @@
       <span class="page-footer__hashtag">#visitsedona</span>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/">Твиттер</a>
+            <a class="social__link social__link--twitter" href="https://twitter.com/">
+              <img src="img/icon-twitter-svg.svg" width="18" height="14" alt="Твиттер">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">Фейсбук</a>
+            <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">
+              <img src="img/icon-facebook-svg.svg" width="9" height="18" alt="Фейсбук">
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/">Ютуб</a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+              <img src="img/icon-youtube-svg.svg" width="20" height="14" alt="Ютуб">
+            </a>
           </li>
         </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотим HTML">
+        </a>
       </div>
     </footer>
   </body>

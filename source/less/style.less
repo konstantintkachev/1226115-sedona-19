@@ -1,0 +1,208 @@
+@import "variables.less";
+@import "font.less";
+@import "block/page-header.less";
+@import "block/page-main.less";
+@import "block/page-footer.less";
+
+body {
+  text-transform: @baseTextTransform;
+  letter-spacing: @baseLetterSpacing;
+  font-family: @baseFontFamily;
+  font-style: @baseFontStyle;
+  font-stretch: @baseFontStretch;
+}
+
+//block/page-header.less
+.main-nav__wrapper {
+  background-color: @light-grey-blue;
+  width: @baseWidth;
+}
+
+.main-nav__list {
+  list-style: @baseListStyle;
+  padding: 0;
+}
+
+.main-nav__item {
+  text-align: @baseTextAlign;
+  padding: 21px 0 20px 0;
+  box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  a {
+    color: @white-two;
+    font-size: @baseFontSize + 4;
+    text-decoration: @baseTextDecoration;
+    
+  }
+}
+
+//block/page-main.less
+.reason {
+  width: @baseWidth;
+  .reason__title {
+    font-size: @baseFontSize + 4;
+    line-height: @baseLineHeight + 5;
+    font-weight: @baseFontWeight + 300;
+    margin-top: 43px;
+    text-align: @baseTextAlign;
+  }
+  .reason__description {
+    font-size: @baseFontSize;
+    font-weight: @baseFontWeight;
+    color: @black-lighter;
+    text-align: @baseTextAlign;
+    line-height: @baseLineHeight + 5;
+    margin-bottom: 29px;
+  }
+}
+
+.feature {
+  background-color: @light-grey-blue;
+  width: @baseWidth;
+  padding: 0 27px 0 28px;
+  .feature__title {
+    font-size: @baseFontSize + 4;
+    text-align: @baseTextAlign;
+    color: @white-two;
+    line-height: @baseLineHeight + 5;
+    font-weight: @baseFontWeight + 300;
+    padding-top: 63px;
+  }
+  .feature__number {
+    color: @white-two;
+    text-align: @baseTextAlign;
+    padding-left: 130px;
+    font-size: @baseFontSize;
+  }
+  .feature__text {
+    color: @white-two;
+    text-align: @baseTextAlign;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    padding-bottom: 45px;
+  }
+}
+
+.recommendation-services__list {
+  list-style: @baseListStyle;
+  .recommendation-services__item {
+    width: @baseWidth - 110;
+  }
+  .recommendation-services__title {
+    font-size: @baseFontSize + 4;
+    line-height: @baseLineHeight + 5;
+    text-align: left;
+  }
+  .recommendation-services__text {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: left;
+    margin-bottom: 38px;
+    color: @black-lighter;
+  }
+}
+.attractions {
+  background-color: @grey;
+  width: @baseWidth;
+  .attractions__list {
+  list-style: @baseListStyle;
+  padding: 0;
+  margin: 0;
+  } 
+  .attractions__title {
+    font-size: @baseFontSize + 4;
+    line-height: @baseLineHeight + 5;
+    text-align: @baseTextAlign;
+    padding-top: 33px;
+  }
+  .attractions__number {
+    padding-left: 130px;
+    font-size: @baseFontSize;
+  }
+  .attractions__text {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: @baseTextAlign;
+    padding-bottom: 32px;
+  }
+}
+
+.offer {
+  width: @baseWidth;
+
+.offer__title {
+  font-size: @baseFontSize + 7;
+  line-height: @baseLineHeight + 5;
+  text-align: @baseTextAlign;
+  }
+  .offer__text {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight + 3;
+    color: @black-lighter;
+    text-align: @baseTextAlign;
+  }
+}
+
+.gallery {
+  .gallery__article {
+    width: @baseWidth;
+    margin-top: 44px;
+  }
+  .gallery__title {
+    font-size: @baseFontSize + 4;
+    line-height: @baseLineHeight + 5;
+    text-align: @baseTextAlign;
+  }
+  .gallery__text {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight + 3;
+    text-align: @baseTextAlign;
+    margin-bottom: 56px;
+  }
+  .gallery__author {
+  }
+  .gallery__name {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight + 3;
+  }
+  .gallery__author-name {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight + 3;
+    text-transform: none;
+    color: @black-lighter;
+  }
+  .gallery__like {
+    text-decoration: @baseTextDecoration;
+    color: @black;
+  }
+}
+//block/page-footer.less
+.page-footer {
+  .page-footer__hashtag {
+    font-size: @baseFontSize + 7;
+    line-height: @baseLineHeight + 5;
+    text-align: @baseTextAlign;
+    font-weight: @baseFontWeight + 300;
+  }
+  .social__list {
+    list-style: @baseListStyle;
+  }
+  .social__item {
+    background-color: @light-grey-blue;
+    width: 46px;
+    height: 48px;
+    margin-bottom: 5px;
+  }
+  .social__link {
+    img {
+      padding-top: 17px;
+      padding-left: 14px;
+    }
+  }
+  .copyright__text {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+  }
+  .copyright__link {
+    text-decoration: @baseTextDecoration;
+  }
+}
