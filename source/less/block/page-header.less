@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.page-header__logo {
+  order: 2;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-width: @tablet-width;
+  }
+  .page-header__logo {
+    position: relative;
+    z-index: 1;
+    bottom: 67px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-width: @desktop-width;
+  }
+  .page-header__logo {
+    position: relative;
+    z-index: 1;
+    bottom: 67px;
+  }
+}

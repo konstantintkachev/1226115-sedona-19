@@ -14,10 +14,13 @@
   line-height: 26px;
   text-align: center;
   padding-top: 33px;
+  margin: 0;
+  font-weight: bold;
+  padding-bottom: 14px;
 }
 
 .attractions__number {
-  padding-left: 130px;
+  padding-left: 140px;
   font-size: 14px;
 }
 
@@ -26,4 +29,42 @@
   line-height: 21px;
   text-align: center;
   padding-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    width: @tablet-width;
+  }
+  .attractions__list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .attractions__item {
+    padding-right: 34px;
+    padding-left: 35px;
+  }
+  .attractions__title {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  .attractions__number {
+    padding-left: 74px;
+  }
+  .attractions__text {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .attractions {
+    width: @desktop-width;
+  }
+  .attractions__title {
+    padding-left: 103px;
+    padding-right: 103px;
+  }
+  .attractions__number {
+    padding-left: 146px;
+  }
 }

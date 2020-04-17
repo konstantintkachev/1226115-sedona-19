@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
@@ -42,11 +43,14 @@
         <p class="reason__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <div class="feature">
+        <div class="feature__wrapper">
         <h2 class="feature__title">Настоящий городок</h2>
         <span class="feature__number"> - №1 -</span>
         <p class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="img/photo-city-1-x.png" width="320" height="260" alt="Фото города">
       </div>
-      <img src="img/photo-city-1-x.png" width="520" height="260" alt="Фото города">
+
       <div class="recommendation-services">
         <h2 class="visually-hidden">Советы</h2>
         <ul class="recommendation-services__list">
@@ -68,11 +72,14 @@
         </ul>
       </div>
       <div class="feature">
+        <div class="feature__wrapper">
         <h2 class="feature__title">Там есть мост дьявола</h2>
         <span class="feature__number"> - №2 -</span>
         <p class="feature__text">Да, по нему можно пройтись, если вы осмелитесь, конечно</p>
+        </div>
+        <img src="img/photo-bridge-1-x.png" width="320" height="260" alt="Мост">
       </div>
-      <img src="img/photo-bridge-1-x.png" width="520" height="260" alt="Мост">
+
       <div class="attractions">
         <h2 class="visually-hidden">Достопримечательности</h2>
         <ul class="attractions__list">
@@ -95,9 +102,11 @@
       </div>
     </section>
     <section class="offer">
-      <h2 class="offer__title">Заинтересовались?</h2>
-      <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
-      </p>
+      <div class="offer__wrapper">
+        <h2 class="offer__title">Заинтересовались?</h2>
+        <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
+        </p>
+      </div>
       <button class="offer__toggle" type="button">Найти гостиницу</button>
       <!--<div class="map">
 					<iframe
@@ -108,7 +117,9 @@
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
     <span class="page-footer__hashtag">#visitsedona</span>
+    </div>
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/">
@@ -126,8 +137,8 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+    <div class="page-footer__copyright">
+      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотим HTML">
       </a>
