@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
@@ -18,13 +19,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
             <a href="#">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Форма отзыва</a>
+            <a href="form.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a href="#">HTML Academy</a>
@@ -36,51 +37,63 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="gallery__article">
+      <h2 class="gallery__title">Фото и видео</h2>
+      <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+        и экономике.</p>
+    </div>
     <section class="gallery">
-      <div class="gallery__article">
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
-          и экономике.</p>
-      </div>
-      <div class="gallery__content">
-        <img class="gallery__picture" src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Закат">
+      <div class="gallery__content--big">
+        <img class="gallery__picture--big" src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Закат">
         <div class="gallery__author">
           <b class="gallery__name">Неродные просторы</b>
           <span class="gallery__author-name">Автор фото: Борис</span>
+        <div class="gallery__wrapper gallery-wrapper-like">
+            <a class="gallery__like" href="#">
+              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">1350</span>
+            </a>
         </div>
-        <a class="gallery__like" href="#">
-          <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">1350</span>
-        </a>
+        </div>
       </div>
-      <div class="gallery__content">
-        <img class="gallery__picture" src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Растительность">
-        <div class="gallery__author">
+      <div class="gallery__content gallery__content--small">
+        <img class="gallery__picture picture-bacground" src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Растительность">
+        <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Местная растительность</b>
           <span class="gallery__author-name">Автор фото: Сергей</span>
+        <div class="gallery__wrapper">
+            <a class="gallery__like" href="#">
+              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">143</span>
+            </a>
         </div>
-        <a class="gallery__like" href="#">
-          <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">143</span>
-        </a>
+        </div>
       </div>
-      <div class="gallery__content">
-        <img class="gallery__picture" src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
-        <div class="gallery__author">
+
+      <div class="gallery__content gallery__content--small">
+        <img class="gallery__picture picture-bacground" src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+        <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Дорога на север</b>
           <span class="gallery__author-name">Автор фото: Петр</span>
+        <div class="gallery__wrapper">
+            <a class="gallery__like" href="#">
+              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">96</span>
+            </a>
         </div>
-        <a class="gallery__like" href="#">
-          <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">96</span>
-        </a>
+        </div>
+
       </div>
-      <div class="gallery__content">
-        <img class="gallery__picture" src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
-        <div class="gallery__author">
+      <div class="gallery__content gallery__content--small">
+        <img class="gallery__picture picture-bacground" src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+        <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Мост дьявола</b>
           <span class="gallery__author-name">Автор фото: Антон</span>
+        <div class="gallery__wrapper">
+            <a class="gallery__like" href="#">
+              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">254</span>
+            </a>
         </div>
-        <a class="gallery__like" href="#">
-          <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">254</span>
-        </a>
+        </div>
+
+      </div>
       </div>
     </section>
     <div class="article">
@@ -88,25 +101,31 @@
       <p class="article__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
     </div>
-    <img class="picture" src="img/video-mobile-jpg.png" width="321" height="201" alt="Дорога в горы">
     <div class="filter">
+      <div class="filter__wrapper">
+        <img class="filter__picture" src="img/video-mobile-jpg.png" width="321" height="201" alt="Дорога в горы">
+      </div>
       <div class="range">
 
       </div>
-      <button class="filter__btn" type="button" name="button">
-        <img src="img/replay-svg.svg" width="16" height="21" alt="Повтор">
-      </button>
-      <button class="filter__btn" type="button" name="button">
-      <img src="img/subtitles-svg.svg" width="32" height="20" alt="Субтитры">
-      </button>
-      <button class="filter__btn" type="button" name="button">
-      <img src="img/video-mobile-jpg.png" width="20" height="20" alt="На полный экран">
-      </button>
+      <div class="filter__wrapper-button">
+        <button class="filter__btn--replay" type="button" name="button">
+          <img src="img/replay-svg.svg" width="16" height="21" alt="Повтор">
+        </button>
+        <button class="filter__btn--subtitles" type="button" name="button">
+        <img src="img/subtitles-svg.svg" width="32" height="20" alt="Субтитры">
+        </button>
+        <button class="filter__btn--video-mobile" type="button" name="button">
+        <img src="img/video-mobile-jpg.png" width="20" height="20" alt="На полный экран">
+        </button>
+      </div>
     </div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer__wrapper">
     <span class="page-footer__hashtag">#visitsedona</span>
+    </div>
     <ul class="social__list">
       <li class="social__item">
         <a class="social__link social__link--twitter" href="https://twitter.com/">
@@ -124,8 +143,8 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
+    <div class="page-footer__copyright">
+      <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотим HTML">
       </a>

@@ -6,6 +6,7 @@
 .main-nav__list {
   list-style: normal;
   padding: 0;
+  margin: 0;
 }
 
 .main-nav__item {
@@ -18,5 +19,73 @@
     font-size: 18px;
     text-decoration: none;
     font-weight: bold;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__wrapper {
+    width: @tablet-width;
+    background-color: #ffffff;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    min-height: 56px;
+    display: flex;
+    width: @tablet-width;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .main-nav__item {
+    width: 20%;
+
+    a {
+      font-size: 14px;
+      color: #000000;
+      letter-spacing: 0.3px;
+      font-weight: bold;
+      line-height: 26px;
+    }
+  }
+
+  .main-nav__item:nth-child(3) {
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__wrapper {
+    width: @desktop-width;
+    background-color: #ffffff;
+
+    .main-nav__list {
+      min-height: 56px;
+      display: flex;
+      width: @desktop-width;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__item {
+      width: 20%;
+    }
+
+    .main-nav__item:nth-child(3) {
+      margin-left: 20%;
+    }
   }
 }

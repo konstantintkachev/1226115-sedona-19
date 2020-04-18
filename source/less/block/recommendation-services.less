@@ -10,6 +10,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: left;
+  font-weight: bold;
 }
 
 .recommendation-services__text {
@@ -18,4 +19,26 @@
   text-align: left;
   margin-bottom: 38px;
   color: @black-lighter;
+}
+
+@media (min-width: @tablet-width) {
+  .recommendation-services__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .recommendation-services__item {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .recommendation-services__title {
+    line-height: 26px;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  .recommendation-services__text {
+    text-align: center;
+  }
 }
