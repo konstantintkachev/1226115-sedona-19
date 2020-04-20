@@ -44,8 +44,8 @@
         вами достопримечательностях</p>
       </div>
       <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="search-form__desc search-form__desc--block-first">
-          <legend class="search-form__title search-form__desc--title-first">Представьтесь:</legend>
+        <div class="search-form__desc search-form__desc--block-first">
+          <h3 class="search-form__title search-form__desc--title-first">Представьтесь:</h3>
           <label class="search-form__field-name" for="name">Имя*:
             <input class="search-form__field-input search-form__field-name--first" type="text" name="name" placeholder="Петр" id="name" required>
           </label>
@@ -55,10 +55,11 @@
           <label class="search-form__field-name" for="patronymic">Отчество:
             <input class="search-form__field-input search-form__field-name--first" type="text" name="patronymic" placeholder="Александрович" id="patronymic">
           </label>
-        </fieldset>
-        <fieldset class="search-form__desc search-form__desc--block-second">
-          <legend class="search-form__title search-form__desc--title-second">Контактная информация:</legend>
-          <label class="search-form__field-name search-form__field-name--facts" for="mobile">Контактный телефон*:
+        </div>
+        <div class="search-form__desc search-form__desc--block-second">
+          <div class="search-form__desc search-form__desc-wrapper">
+          <h3 class="search-form__title search-form__desc--title-second">Контактная информация:</h3>
+          <label class="search-form__field-name search-form__field-name--facts" for="mobile"><span class="search-form__field-name search-form__field-name-hidden">Контактный</span> телефон*:
             <input class="search-form__field-input search-form__user-editor" type="tel" name="mobile"
               placeholder="Введите телефон" id="mobile">
             <img src="img/phone-svg.svg" width="18" height="18" alt="Телефон">
@@ -68,9 +69,10 @@
               placeholder="Введите e-mail" id="email" required>
             <img src="img/mail-svg.svg" width="16" height="12" alt="Конверт">
           </label>
-        </fieldset>
-        <fieldset class="search-form__desc search-form__desc--block-third">
-          <legend class="search-form__title search-form__desc--title-third">Ваше общее впечатление:</legend>
+          </div>
+        </div>
+        <div class="search-form__desc search-form__desc--block-third">
+          <h3 class="search-form__title search-form__desc--title-third">Ваше общее впечатление:</h3>
           <input class="search-form__radio" type="radio" name="rating" value="Скорее положительное" checked="checked"
             id="positively">
           <label class="search-form__inner" for="positively">Скорее положительное</label>
@@ -78,36 +80,36 @@
           <label class="search-form__inner" for="negatively">Скорее отрицательное</label>
           <input class="search-form__radio" type="radio" name="rating" value="Затрудняюсь ответить" id="no-answer">
           <label class="search-form__inner" for="no-answer">Затрудняюсь ответить</label>
-        </fieldset>
+        </div>
         <div class="search-form__desc search-form__desc--block-fourth">
-          <legend class="search-form__title search-form__desc--title-fourth">Посещенные достопримечательности:</legend>
-          <div class="search-form__inner--first-half">
-          <label class="search-form__inner" for="bridge">
+          <div class="search-form__desc search-form__desc--wrapper-fourth">
+          <h3 class="search-form__title search-form__desc--title-fourth">Посещенные достопримечательности:</h3>
+          <label class="search-form__inner search-form__inner--viseted-place" for="bridge">
             <input class="search-form__visited places" type="checkbox" name="place" value="Мост дьявола"
               checked="checked" id="bridge"> Мост дьявола
           </label>
-          <label class="search-form__inner" for="mountain">
+          <label class="search-form__inner search-form__inner--viseted-place" for="mountain">
             <input class="search-form__visited places" type="checkbox" name="place" value="Гора-колокол"
               checked="checked" id="mountain"> Гора-Колокол
           </label>
-          </div>
-          <div class="search-form__inner--second-half">
-          <label class="search-form__inner" for="park">
+          <label class="search-form__inner search-form__inner--viseted-place" for="park">
             <input class="search-form__visited places" type="checkbox" name="place" value="Слайд-парк" checked="checked"
               id="park"> Слайд-парк
           </label>
-          <label class="search-form__inner" for="rocks">
+          <label class="search-form__inner search-form__inner--viseted-place" for="rocks">
             <input class="search-form__visited places" type="checkbox" name="place" value="Красные скалы" id="rocks">
             Красные скалы
           </label>
           </div>
         </div>
-        <fieldset class="search-form__desc search-form__desc--block-fifth">
-          <legend class="search-form__title search-form__desc--title-fifth">Опишите свои эмоции:</legend>
+        <div class="search-form__desc search-form__desc--block-fifth">
+          <h3 class="search-form__title search-form__desc--title-fifth">Опишите свои эмоции:</h3>
           <textarea class="search-form__textarea" name="comment" cols="25" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="search-form__wrapper-for-btn">
           <button class="search-form__btn" name="button" type="submit">Отправить отзыв</button>
           <span class="search-form__memo">* - Обязательные поля</span>
-        </fieldset>
+          </div>
+        </div>
       </form>
     </section>
   </main>
