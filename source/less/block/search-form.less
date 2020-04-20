@@ -37,11 +37,12 @@
 
 .search-form__desc--block-fourth {
   display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
-.search-form__desc--wrapper {
+.search-form__desc--wrapper-fourth {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
 }
@@ -134,11 +135,27 @@
     margin: 0;
     width: 100%;
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .search-form__desc--wrapper-fourth {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .search-form__desc--title-fourth {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .search-form__inner--viseted-place {
-    width: 50%;
-    margin: 0;
+    width: 35%;
+    margin-bottom: 20px;
+    margin-left: auto;
+
   }
 
   .search-form__desc--block-fifth {
@@ -146,6 +163,7 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    width: 100%;
   }
 
   .search-form__desc--title-fifth {
@@ -155,7 +173,7 @@
 
   .search-form__textarea {
     margin-bottom: 58px;
-    width: 648px;
+    width: 100%;
   }
 
   .search-form__btn {
@@ -239,19 +257,41 @@
   }
 
   .search-form__desc--wrapper-fourth {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .search-form__inner--viseted-place {
+    width: 25%;
 
   }
 
   .search-form__desc--title-fourth {
     margin-bottom: 50px;
     font-size: 21px;
-  }
-
-  .search-form__inner--viseted-place {
-    margin: 0 50px;
+    padding-left: 273px;
+    padding-right: 272px;
   }
 
   .search-form__inner {
     font-size: 18px;
+  }
+
+  .search-form__desc--block-fifth {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-form__desc--title-fifth {
+    font-size: 21px;
+  }
+
+  .search-form__textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-form__btn {
+    width: 480px;
   }
 }
