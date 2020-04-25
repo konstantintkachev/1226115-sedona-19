@@ -1,9 +1,28 @@
+.feature {
+  position: relative;
+}
+
+.feature-img__intro-triangle {
+  position: absolute;
+  background-image: url(../../img/white-copy-2.png);
+  width: 320px;
+  top: -7px;
+  z-index: 3;
+  height: 57px;
+  background-repeat: no-repeat;
+}
+
 .feature__wrapper {
   background-color: @light-grey-blue;
   width: 320px;
-  padding: 0 27px 0 28px;
+  padding: 0;
   box-sizing: border-box;
-  height: 211px;
+  height: 235px;
+  display: block;
+}
+
+.feature__wrapper--new-wrapper {
+  height: 191px;
 }
 
 .feature__title {
@@ -12,13 +31,19 @@
   color: #ffffff;
   line-height: 26px;
   font-weight: bold;
-  padding-top: 50px;
+  padding-top: 82px;
+  padding-bottom: 7px;
+  margin: 0;
+}
+
+.feature__title--new-title {
+  padding-top: 38px;
 }
 
 .feature__number {
   color: #ffffff;
   text-align: center;
-  padding-left: 115px;
+  padding-left: 140px;
   font-size: 14px;
 }
 
@@ -28,7 +53,25 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding-top: 15px;
+  padding: 18px 19px 0 19px;
+  letter-spacing: 0;
+}
+
+.feature-banner__photo-city {
+  background-image: url(../../img/photo-city-1-x.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 520px;
+  right: 100px;
+}
+
+.feature-banner__photo-bridge {
+  background-image: url(../../img/photo-bridge-1-x.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 520px;
+  right: 101px;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {

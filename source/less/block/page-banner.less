@@ -1,0 +1,50 @@
+.page-banner {
+  position: relative;
+  width: 320px;
+  height: 389px;
+  margin: 0;
+}
+
+.page-banner__bg-back {
+	background-image: url("../../img/back-mobile-jpg.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: -28px;
+  height: 389px;
+  right: 235px;
+  z-index: 1;
+}
+
+.page-banner__welcome {
+  background-color: url(../../img/text-index-svg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  bottom: 331px;
+  left: 18px;
+}
+
+.page-banner__intro-triangle {
+  background-image: url(../../img/intro-triangle-svg.png);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 3;
+  bottom: 275px;
+  width: 100%;
+  left: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-banner__bg-back {
+    background-image: url("../../img/back-mobile-jpg.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: -28px;
+    height: 389px;
+    right: 235px;
+    z-index: 1;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/back-desktop-jpg.png");
+    }
+  }
+}

@@ -4,6 +4,7 @@
 
 .recommendation-services__item {
   width: 210px;
+  position: relative;
 }
 
 .recommendation-services__title {
@@ -11,14 +12,51 @@
   line-height: 26px;
   text-align: left;
   font-weight: bold;
+  padding-left: 30px;
+  padding-top: 15px;
+  margin-bottom: 14px;
+}
+
+.recommendation-services__title--gift {
+  padding-top: 0;
+  margin: 0;
+}
+
+.recommendation-services__title--burger {
+  padding: 0 0 0 30px;
+  margin-bottom: 17px;
 }
 
 .recommendation-services__text {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
   color: @black-lighter;
+  padding-left: 30px;
+  width: 210px;
+}
+
+.recommendation-services__text--new-text {
+  margin-bottom: 36px;
+}
+
+.recommendation-services__house-svg {
+  position: absolute;
+  right: 191px;
+  top: 4px;
+}
+
+.recommendation-services__gift-svg {
+  position: absolute;
+  right: 191px;
+  top: -12px;
+}
+
+.recommendation-services__burger-svg {
+  position: absolute;
+  right: 191px;
+  top: -4px;
 }
 
 @media (min-width: @tablet-width) {

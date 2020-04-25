@@ -6,7 +6,6 @@
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
       <img class="page-header__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="83"
         alt="Логотип Седона">
     </a>
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -38,47 +37,57 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="page-banner">
+      <picture>
+      <source media="(min-width: 768px)" srcset="../../img/back-desktop-jpg@3x">
+      <img class="page-banner__bg-back" src="img/back-mobile-jpg.png" width="789" height="389" alt="Горы">
+      <img class="page-banner__welcome" src="img/text-index-svg.png" width="281" height="214" alt="Добро пожаловать в Седону">
+      <img class="page-banner__intro-triangle" src="img/intro-triangle-svg.png" width="320" height="26" alt="Внутренний треугольник">
+      </picture>
+    </div>
+
     <section class="advantages-option">
       <div class="reason">
         <h2 class="reason__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="reason__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <div class="feature">
+        <img class="feature-img__intro-triangle" src="img/white-copy-2.png" width="320" height="37" alt="Внутренний треугольник">
         <div class="feature__wrapper">
         <h2 class="feature__title">Настоящий городок</h2>
         <span class="feature__number"> - №1 -</span>
         <p class="feature__text">Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="img/photo-city-1-x.png" width="320" height="260" alt="Фото города">
+        <img class="feature-banner__photo-city" src="img/photo-city-1-x.png" width="320" height="260" alt="Фото города">
       </div>
 
       <div class="recommendation-services">
         <h2 class="visually-hidden">Советы</h2>
         <ul class="recommendation-services__list">
           <li class="recommendation-services__item">
-            <img src="img/icon-house-svg.svg" width="37" height="36" alt="Дом">
+            <img class="recommendation-services__house-svg" src="img/icon-house-svg.svg" width="37" height="36" alt="Дом">
             <h3 class="recommendation-services__title">Жилье</h3>
             <p class="recommendation-services__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="recommendation-services__item">
-            <img src="img/icon-gift-svg.svg" width="32" height="38" alt="Сувениры">
-            <h3 class="recommendation-services__title">Сувениры</h3>
+            <img class="recommendation-services__gift-svg" src="img/icon-gift-svg.svg" width="32" height="38" alt="Сувениры">
+            <h3 class="recommendation-services__title recommendation-services__title--gift">Сувениры</h3>
             <p class="recommendation-services__text">Не только китайского, но и местного производства!</p>
           </li>
           <li class="recommendation-services__item">
-            <img src="img/icon-burger-svg.svg" width="40" height="35" alt="Бургер">
-            <h3 class="recommendation-services__title">Еда</h3>
-            <p class="recommendation-services__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <img class="recommendation-services__burger-svg" src="img/icon-burger-svg.svg" width="40" height="35" alt="Бургер">
+            <h3 class="recommendation-services__title recommendation-services__title--burger">Еда</h3>
+            <p class="recommendation-services__text recommendation-services__text--new-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </div>
       <div class="feature">
-        <div class="feature__wrapper">
-        <h2 class="feature__title">Там есть мост дьявола</h2>
+        <div class="feature__wrapper feature__wrapper--new-wrapper">
+        <h2 class="feature__title feature__title--new-title">Там есть мост дьявола</h2>
         <span class="feature__number"> - №2 -</span>
         <p class="feature__text">Да, по нему можно пройтись, если вы осмелитесь, конечно</p>
         </div>
-        <img src="img/photo-bridge-1-x.png" width="320" height="260" alt="Мост">
+        <img class="feature-banner__photo-bridge" src="img/photo-bridge-1-x.png" width="320" height="260" alt="Мост">
       </div>
 
       <div class="attractions">
@@ -89,7 +98,7 @@
             <span class="attractions__number"> - №3 -</span>
             <p class="attractions__text">Все интересные места находятся очень близко</p>
           </li>
-          <li class="attractions__item">
+          <li class="attractions__item attractions__item--element">
             <h3 class="attractions__title">Красивая дорога</h3>
             <span class="attractions__number"> - №4 -</span>
             <p class="attractions__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -109,11 +118,11 @@
         </p>
       </div>
       <button class="offer__toggle" type="button">Найти гостиницу</button>
-      <!--<div class="map">
+      <div class="offer__map">
 					<iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838157.8360517193!2d-112.35549774475408!3d34.85486926877189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560516137746!5m2!1sru!2sru"
-          width="1200" height="473" allowfullscreen></iframe>
-				</div>-->
+          width="320" height="350" allowfullscreen></iframe>
+				</div>
     </section>
   </main>
 
@@ -145,6 +154,7 @@
       </a>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
