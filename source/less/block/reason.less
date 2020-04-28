@@ -7,10 +7,9 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  margin-top: 12px;
+  margin-top: 43px;
   text-align: center;
-  padding-left: 32px;
-  padding-right: 33px;
+  padding: 0 33px 0 32px;
 }
 
 .reason__description {
@@ -30,12 +29,33 @@
   .reason {
     width: 490px;
     margin: auto;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .reason__title {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-top: 52px;
+  }
+
+  .reason__description {
+    font-size: 14px;
+    font-weight: normal;
+    color: @black-lighter;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 27px;
+    margin-bottom: 0;
+    letter-spacing: 0.1px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason__title {
+    letter-spacing: 0.5px;
+    padding-left: 23px;
+    padding-right: 20px;
   }
 }

@@ -29,11 +29,10 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-left: 20px;
   letter-spacing: -1.5px;
   outline: 0;
   border: 0;
-  margin-bottom: 47px;
+  margin: 0 0 50px 20px;
 }
 
 .offer__map {
@@ -42,9 +41,9 @@
 
 @media (min-width: @tablet-width) {
   .offer__wrapper {
-
     height: 98px;
-    margin: auto;
+    margin: 0 auto;
+    width: 434px;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 57px;
@@ -53,11 +52,17 @@
 
   .offer__title {
     font-size: 30px;
+    padding: 0 18px 4px;
+  }
+
+  .offer__text {
+    padding: 0;
   }
 
   .offer__toggle {
     width: 458px;
     margin-left: 155px;
+    margin-bottom: 58px;
   }
 }
 
@@ -66,13 +71,22 @@
     width: 458px;
     margin-left: 371px;
   }
+
+  .offer__toggle {
+    background-color: @light-grey-blue;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 5px 0 0;
+    margin-bottom: 65px;
+  }
+
+  .offer__wrapper {
+    margin-bottom: 52px;
+  }
 }
 
-.offer__toggle {
-  background-color: @light-grey-blue;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: bold;
-}
+

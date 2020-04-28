@@ -11,11 +11,14 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotyle-mobile-svg.svg" width="102" height="83"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83"
         alt="Логотип Седона">
+      </picture>
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -37,58 +40,84 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <div class="page-banner page-banner__photo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+        <img class="page-banner__triangle" src="img/bg-intro-triangle-mobile.svg" width="320" height="26" alt="Треугольник">
+      </picture>
+      <img class="page-banner__text" src="img/text-sedona.svg" width="229" height="39" alt="Текст Седона">
+    </div>
     <div class="gallery__article">
       <h2 class="gallery__title">Фото и видео</h2>
       <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
         и экономике.</p>
     </div>
     <section class="gallery">
-      <div class="gallery__content--big">
-        <img class="gallery__picture--big" src="img/photo-1-mobile-jpg.png" width="280" height="280" alt="Закат">
+      <div class="gallery__content gallery__content-pictures--big">
+        <div class="gallery__content--banner">
+          <picture>
+
+            <img class="gallery__picture--big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
+
+          </picture>
+        </div>
         <div class="gallery__author">
           <b class="gallery__name">Неродные просторы</b>
           <span class="gallery__author-name">Автор фото: Борис</span>
         <div class="gallery__wrapper gallery-wrapper-like">
             <a class="gallery__like" href="#">
-              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">1350</span>
+              <img src="img/icon-like.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">1350</span>
             </a>
         </div>
         </div>
       </div>
       <div class="gallery__content gallery__content--small">
-        <img class="gallery__picture picture-bacground" src="img/photo-2-mobile-jpg.png" width="280" height="280" alt="Растительность">
+        <picture>
+
+          <img class="gallery__picture gallery__picture--cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность">
+
+        </picture>
         <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Местная растительность</b>
           <span class="gallery__author-name">Автор фото: Сергей</span>
         <div class="gallery__wrapper">
             <a class="gallery__like" href="#">
-              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">143</span>
+              <img src="img/icon-like.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">143</span>
             </a>
         </div>
         </div>
       </div>
 
       <div class="gallery__content gallery__content--small">
-        <img class="gallery__picture picture-bacground" src="img/photo-3-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+        <picture>
+
+          <img class="gallery__picture gallery__picture--roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+
+        </picture>
         <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Дорога на север</b>
           <span class="gallery__author-name">Автор фото: Петр</span>
         <div class="gallery__wrapper">
             <a class="gallery__like" href="#">
-              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">96</span>
+              <img src="img/icon-like.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">96</span>
             </a>
         </div>
         </div>
 
       </div>
       <div class="gallery__content gallery__content--small">
-        <img class="gallery__picture picture-bacground" src="img/photo-4-mobile-jpg.png" width="280" height="280" alt="Дорога на север">
+        <picture>
+
+          <img class="gallery__picture gallery__picture--bridge" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+
+        </picture>
         <div class="gallery__author wrapper-gallery-author">
           <b class="gallery__name">Мост дьявола</b>
           <span class="gallery__author-name">Автор фото: Антон</span>
         <div class="gallery__wrapper">
             <a class="gallery__like" href="#">
-              <img src="img/like-icon-svg.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">254</span>
+              <img src="img/icon-like.svg" width="23" height="21" alt="Лайк"><span class="gallery__number">254</span>
             </a>
         </div>
         </div>
@@ -150,6 +179,7 @@
       </a>
     </div>
   </footer>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

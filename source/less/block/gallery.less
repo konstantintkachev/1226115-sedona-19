@@ -1,19 +1,25 @@
 .gallery__content {
-  margin-bottom: 70px;
+  margin-bottom: 18px;
+  &::before {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #333333;
+    display: block;
+    opacity: 0.2;
+  }
 }
 
 .picture-mobile {
-  margin-left: 20px;
-  margin-bottom: 22px;
+  margin: 0 0 22px 20px;
 }
 
 .gallery__picture--big {
-  margin-left: 20px;
+  margin: 24px 0 11px 20px;
 }
 
 .gallery__picture {
-  margin-left: 20px;
-  margin-bottom: 22px;
+  margin: 22px 0 22px 20px;
 }
 
 .gallery__author {
@@ -39,8 +45,9 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 56px;
+  margin-bottom: 25px;
   letter-spacing: 0.5;
+  margin-top: 27px;
 }
 
 .gallery__name {
@@ -58,10 +65,27 @@
 .gallery__like {
   text-decoration: none;
   color: #000000;
+
+  img {
+    margin-top: 5px;
+  }
+
 }
 
 .gallery__number {
   margin-left: 14px;
+}
+
+.gallery__picture--cactus {
+  margin-bottom: 12px;
+}
+
+.gallery__picture--roads {
+  margin-bottom: 12px;
+}
+
+.gallery__picture--bridge {
+  margin-bottom: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -110,7 +134,7 @@
     margin: 0;
   }
 
-  .picture-bacground {
+  .picture-background {
     width: 324px;
     height: 267px;
   }
@@ -166,7 +190,7 @@
     box-sizing: border-box;
   }
 
-  .picture-bacground {
+  .picture-background {
     width: 400px;
   }
 

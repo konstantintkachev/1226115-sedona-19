@@ -82,9 +82,8 @@
 
   .attractions__title {
     text-align: center;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 45px 60px 9px;
+    font-size: 21px;
   }
 
   .attractions__number {
@@ -92,10 +91,24 @@
   }
 
   .attractions__text {
-    padding: 0;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 22px;
+    padding: 0 49px;
+  }
+
+  .attractions__text--addition {
+    padding: 0 55px;
+  }
+
+  .attractions__item--element {
+    &:after {
+      display: none;
+    }
+  }
+
+  .attractions__item--element {
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -128,7 +141,12 @@
   }
 
   .attractions__text {
-    padding-left: 61px;
-    padding-right: 62px;
+    padding-left: 58px;
+    padding-right: 59px;
+  }
+
+  .attractions__text--addition {
+    padding-left: 62px;
+    padding-right: 63px;
   }
 }
