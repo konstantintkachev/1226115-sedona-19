@@ -2,11 +2,15 @@
   display: flex;
   flex-direction: column;
   width: 320px;
+  position: relative;
 }
 
 .page-header__logo {
   order: 2;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
+  left: 0;
+  z-index: 3;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,10 +20,14 @@
 
   .page-header__logo {
     position: absolute;
-    z-index: 1;
-    top: 0;
+    z-index: 3;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .page-header__logo-image {
+    width: 102px;
+    height: 83px;
   }
 }
 
@@ -28,11 +36,8 @@
     min-width: @desktop-width;
   }
 
-  .page-header__logo {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  .page-header__logo-image {
+    width: 188px;
+    height: 96px;
   }
 }

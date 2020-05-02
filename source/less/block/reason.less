@@ -1,5 +1,6 @@
 .reason {
   width: 320px;
+  margin: 0;
 }
 
 .reason__title {
@@ -8,6 +9,7 @@
   font-weight: bold;
   margin-top: 43px;
   text-align: center;
+  padding: 0 33px 0 32px;
 }
 
 .reason__description {
@@ -16,19 +18,44 @@
   color: @black-lighter;
   text-align: center;
   line-height: 26px;
-  margin-bottom: 29px;
+  margin-top: 27px;
+  margin-bottom: 0;
+  letter-spacing: 0.1px;
+  padding-left: 17px;
+  padding-right: 14px;
 }
 
 @media (min-width: @tablet-width) {
   .reason {
     width: 490px;
     margin: auto;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .reason__title {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    margin-top: 52px;
+  }
+
+  .reason__description {
+    font-size: 14px;
+    font-weight: normal;
+    color: @black-lighter;
+    text-align: center;
+    line-height: 26px;
+    margin-top: 27px;
+    margin-bottom: 0;
+    letter-spacing: 0.1px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason__title {
+    letter-spacing: 0.5px;
+    padding-left: 23px;
+    padding-right: 20px;
   }
 }

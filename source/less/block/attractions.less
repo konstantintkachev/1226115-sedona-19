@@ -9,14 +9,40 @@
   margin: 0;
 }
 
+.attractions__item--element {
+  &:before {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #333333;
+    width: 280px;
+    position: relative;
+    left: 20px;
+    opacity: 0.2;
+  }
+}
+
+.attractions__item--element {
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #333333;
+    width: 280px;
+    position: relative;
+    left: 20px;
+    opacity: 0.2;
+  }
+}
+
 .attractions__title {
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  padding-top: 33px;
+  padding-top: 27px;
   margin: 0;
   font-weight: bold;
-  padding-bottom: 14px;
+  padding-bottom: 7px;
 }
 
 .attractions__number {
@@ -28,7 +54,11 @@
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  padding-bottom: 32px;
+  padding-bottom: 27px;
+  margin-top: 18px;
+  padding-left: 32px;
+  padding-right: 31px;
+  margin-bottom: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -52,9 +82,8 @@
 
   .attractions__title {
     text-align: center;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 45px 60px 9px;
+    font-size: 21px;
   }
 
   .attractions__number {
@@ -62,10 +91,24 @@
   }
 
   .attractions__text {
-    padding: 0;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin-top: 22px;
+    padding: 0 49px;
+  }
+
+  .attractions__text--addition {
+    padding: 0 55px;
+  }
+
+  .attractions__item--element {
+    &:after {
+      display: none;
+    }
+  }
+
+  .attractions__item--element {
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -98,7 +141,12 @@
   }
 
   .attractions__text {
-    padding-left: 61px;
-    padding-right: 62px;
+    padding-left: 58px;
+    padding-right: 59px;
+  }
+
+  .attractions__text--addition {
+    padding-left: 62px;
+    padding-right: 63px;
   }
 }
