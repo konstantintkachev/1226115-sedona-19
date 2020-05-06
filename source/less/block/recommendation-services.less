@@ -1,9 +1,11 @@
 .recommendation-services__list {
   list-style: none;
+  margin-bottom: 37px;
 }
 
 .recommendation-services__item {
   width: 210px;
+  position: relative;
 }
 
 .recommendation-services__title {
@@ -11,34 +13,153 @@
   line-height: 26px;
   text-align: left;
   font-weight: bold;
+  padding: 14px 0 0 30px;
+  margin: 18px 0 14px;
+}
+
+.recommendation-services__title--gift {
+  padding-top: 0;
+  margin: 0;
+}
+
+.recommendation-services__title--burger {
+  padding: 0 0 0 30px;
+  margin-bottom: 17px;
 }
 
 .recommendation-services__text {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  margin-bottom: 38px;
+  margin-bottom: 26px;
   color: @black-lighter;
+  padding-left: 30px;
+  width: 210px;
+}
+
+.recommendation-services__house-svg {
+  position: absolute;
+  right: 191px;
+  top: 4px;
+}
+
+.recommendation-services__gift-svg {
+  position: absolute;
+  right: 191px;
+  top: -12px;
+}
+
+.recommendation-services__burger-svg {
+  position: absolute;
+  right: 191px;
+  top: -4px;
 }
 
 @media (min-width: @tablet-width) {
   .recommendation-services__list {
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    align-items: baseline;
+    margin: 86px 0 60px;
   }
 
   .recommendation-services__item {
     text-align: center;
-    margin-top: 60px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+  }
+
+  .recommendation-services__item--turn-right {
+    order: 3;
+  }
+
+  .recommendation-services__item--turn-left {
+    order: 2;
+  }
+
+  .recommendation-services__house-svg {
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    top: -30px;
+    left: 89px;
+  }
+
+  .recommendation-services__gift-svg {
+    width: 64px;
+    height: 75px;
+    top: -48px;
+    right: 96px;
+    position: absolute;
+  }
+
+  .recommendation-services__burger-svg {
+    width: 77px;
+    height: 68px;
+    top: -40px;
+    right: 89px;
+    position: absolute;
   }
 
   .recommendation-services__title {
     line-height: 26px;
     font-size: 21px;
     text-align: center;
+    margin-top: 55px;
+    padding-left: 0;
+    margin-bottom: 21px;
+  }
+
+  .recommendation-services__text--house {
+    width: 156px;
+  }
+
+  .recommendation-services__text--burger {
+    width: 151px;
+  }
+
+  .recommendation-services__text--gift {
+    width: 164px;
   }
 
   .recommendation-services__text {
     text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .recommendation-services__house-svg {
+    left: 159px;
+  }
+
+  .recommendation-services__burger-svg {
+    left: 159px;
+  }
+
+  .recommendation-services__gift-svg {
+    left: 164px;
+  }
+
+  .recommendation-services__text--house {
+    width: 252px;
+  }
+
+  .recommendation-services__text--burger {
+    width: 283px;
+  }
+
+  .recommendation-services__text--gift {
+    width: 214px;
+  }
+
+  .recommendation-services__list {
+    margin-bottom: 82px;
   }
 }
