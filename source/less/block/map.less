@@ -1,20 +1,26 @@
-.map-banner__img {
+.map-banner {
   margin-bottom: 30px;
+
+  iframe {
+    border: 0;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .map-banner {
-    width: 768px;
-  }
 
+    iframe {
+      width: 768px;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .map-banner {
-    width: 1200px;
-  }
+    margin-bottom: 30px;
 
-  .map-banner__img {
-    margin-bottom: 33px;
+    iframe {
+      width: 1200px;
+    }
   }
 }

@@ -12,17 +12,31 @@
   width: 46px;
   height: 48px;
   margin-right: 6px;
+
+  svg {
+    fill: #ffffff;
+  }
 }
 
-.social__link--facebook {
-  padding-left: 5px;
+.social__item:hover {
+  background-color: #669ec0;
+}
+
+.social__item:active {
+  background-color: #5496bd;
+
+  svg {
+    opacity: 0.3;
+  }
 }
 
 .social__link {
-  img {
-    padding-top: 16px;
-    padding-left: 15px;
-  }
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,5 +47,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .social__list {
+    margin-top: 2px;
+    margin-left: 10px;
+  }
 
+  .social__item:nth-child(3) {
+    margin-right: 0;
+  }
 }
