@@ -14,6 +14,28 @@
 .filter__btn {
   border: 0;
   background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+
+  svg {
+    fill: #5c6870;
+  }
+}
+
+.filter__btn {
+
+  svg:hover {
+    fill: #333333;
+  }
+}
+
+.filter__btn {
+
+  svg:active {
+    fill: #333333;
+    opacity: 0.2;
+  }
 }
 
 .filter__btn--replay {
@@ -66,6 +88,7 @@
   position: absolute;
   left: 57px;
   top: 18px;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -96,14 +119,14 @@
     display: block;
     position: absolute;
     margin: 0;
-    top: 43px;
+    top: 46px;
     left: 93px;
   }
 
   .filter__range::after {
     content: "";
     left: 206px;
-    top: 40px;
+    top: 43px;
   }
 
   .filter__range-wrapper {
@@ -123,10 +146,24 @@
     }
   }
 
+  .filter__btn {
+
+    svg:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .filter__btn {
+
+    svg:active {
+      opacity: 0.2;
+    }
+  }
+
   .filter__btn--replay {
     margin: 0;
     position: absolute;
-    top: 31px;
+    top: 34px;
     left: 29px;
   }
 
@@ -161,7 +198,7 @@
   .filter__range-wrapper {
     width: 800px;
     margin: 0;
-    top: 409px;
+    top: 406px;
   }
 
   .filter__range::before {
