@@ -1,19 +1,43 @@
 .copyright__text {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
 }
 
 .copyright__link {
   text-decoration: none;
   margin-left: 14px;
 
-  img {
-    margin-left: 0;
+  svg {
+    fill: #000000;
+  }
+}
+
+.copyright__link:hover {
+
+  svg {
+    fill: #81b3d2;
+  }
+}
+
+.copyright__link:active {
+
+  svg {
+    fill: #000000;
+    opacity: 0.3;
   }
 }
 
 @media (min-width: @desktop-width) {
   .copyright__link {
     text-decoration: none;
+
+    svg {
+      margin-left: 9px;
+    }
+
+    .page-footer__copyright {
+      display: flex;
+      align-items: baseline;
+    }
   }
 }
