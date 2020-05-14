@@ -1,5 +1,6 @@
 .gallery__content {
   margin-bottom: 18px;
+
   &::before {
     content: "";
     width: 320px;
@@ -96,6 +97,7 @@
 }
 
 .gallery__fronpage {
+
   img {
     margin-left: 20px;
     margin-top: 19px;
@@ -104,6 +106,7 @@
 }
 
 .gallery__content--small {
+
   &::after {
     content: "";
     width: 320px;
@@ -115,7 +118,7 @@
 }
 
 .gallery__number--like {
-  margin-left: 14px;
+  margin-left: 11px;
 }
 
 .gallery-wrapper-like--block-three {
@@ -202,12 +205,34 @@
     margin-left: 5px;
   }
 
+  .gallery__content--banner {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-sunset-tablet@2x.jpg");
+    }
+  }
+
   .gallery__fronpage {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-cactus-tablet@2x.jpg");
+    }
+
     img {
       width: 324px;
       height: 267px;
       display: block;
       margin: 0;
+    }
+  }
+
+  .gallery__wrapper-roads {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-roads-tablet@2x.jpg");
+    }
+  }
+
+  .gallery__wrapper-bridge {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-bridge-tablet@2x.jpg");
     }
   }
 
@@ -257,6 +282,33 @@
     }
   }
 
+  .gallery__content--banner {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-sunset-desktop@2x.jpg");
+    }
+  }
+
+  .gallery__fronpage {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-cactus-desktop@2x.jpg");
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+  .gallery__wrapper-roads {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-roads-desktop@2x.jpg");
+    }
+  }
+
+  .gallery__wrapper-bridge {
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/photo-bridge-desktop@2x.jpg");
+    }
+  }
+
   .gallery__wrapper-author--backg {
     width: 1200px;
     position: absolute;
@@ -282,10 +334,11 @@
     padding-top: 10px;
   }
 
-  .gallery__fronpage {
+  .gallery__like {
 
-    img {
-      width: 400px;
+    svg {
+      fill: #ffffff;
+      opacity: 1;
     }
   }
 
@@ -295,9 +348,5 @@
     background: rgba(1, 1, 1, 0.5);
     z-index: 3;
     top: 187px;
-  }
-
-  .gallery__like  svg {
-    fill: #ffffff;
   }
 }

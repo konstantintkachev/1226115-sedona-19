@@ -293,6 +293,14 @@
   top: -11px;
 }
 
+.search-form__input:hover + .search-form__checkbox--switching {
+  background-color: #e5e5e5;
+}
+
+.search-form__input:active + .search-form__checkbox--switching {
+  background-color: #d5d5d5;
+}
+
 .search-form__desc--wrapper-fourth::before {
   content: "";
   display: block;
@@ -317,10 +325,11 @@
   border: 0;
   font-size: 18px;
   font-weight: bold;
-  letter-spacing: -1px;
+  font-family: inherit;
   background-color: #e6e6e6;
   line-height: 26px;
   padding: 17px 20px 0;
+  resize: none;
 }
 
 .search-form__btn {
@@ -333,7 +342,7 @@
   height: 58px;
   margin-bottom: 73px;
   border: 0;
-  letter-spacing: -1.5px;
+  font-family: inherit;
 }
 
 @media (min-width: @tablet-width) {
@@ -550,6 +559,14 @@
     margin-left: 175px;
   }
 
+  .search-form__checkbox--viseted-place:nth-child(3) {
+    margin-left: 0
+  }
+
+  .search-form__checkbox--viseted-place:nth-child(5) {
+    margin-left: 125px;
+  }
+
   .search-form__checkbox--margin {
     margin-left: 124px;
   }
@@ -657,7 +674,7 @@
   }
 
   .search-form__field-name--patronymic {
-    width: 316px;
+    width: 315px;
   }
 
   .search-form__desc--block-second {
@@ -736,7 +753,7 @@
 
   .search-form__desc--wrapper-fourth {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
   }
 
   .search-form__desc--title-fourth {
@@ -759,16 +776,29 @@
     }
   }
 
-  .search-form__checkbox--viseted-place {
+  .search-form__checkbox {
     margin: 0;
-    width: 15%;
-    margin-left: 80px;
-    margin-right: 27px;
+    width: 13%;
   }
 
-  .search-form__checkbox--margin {
+  .search-form__checkbox--viseted-place:nth-child(2) {
+    margin-left: 80px;
+    margin-right: 69px;
+  }
+
+  .search-form__checkbox--viseted-place:nth-child(3) {
+    margin-right: 29px;
+    margin-left: 65px;
+  }
+
+  .search-form__checkbox--viseted-place:nth-child(4) {
+    margin-right: 57px;
+    margin-left: 106px;
+  }
+
+  .search-form__checkbox--viseted-place:nth-child(5) {
     margin-right: 0;
-    margin-left: 70px;
+    margin-left: 54px;
   }
 
   .search-form__inner {
@@ -808,5 +838,6 @@
   .search-form__btn {
     width: 480px;
     margin-bottom: 104px;
+    padding: 0;
   }
 }
