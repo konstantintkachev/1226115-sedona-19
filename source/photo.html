@@ -17,12 +17,12 @@
         alt="Логотип Седона">
       </picture>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="#">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
             <a href="#">Фото и видео</a>
@@ -48,18 +48,19 @@
       </picture>
       <img class="page-banner__text page-banner__text-photo" src="img/text-sedona.svg" width="229" height="39" alt="Текст Седона">
     </div>
-    <div class="gallery__article">
-      <h2 class="gallery__title">Фото и видео</h2>
-      <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+    <div class="gallery-article">
+      <h2 class="gallery-article__title">Фото и видео</h2>
+      <p class="gallery-article__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
         и экономике.</p>
     </div>
     <section class="gallery">
-      <div class="gallery__content gallery__content-pictures--big">
-        <div class="gallery__content--banner">
+      <h2 class="visually-hidden">Фотогалерея</h2>
+      <div class="gallery__content gallery__pictures-big">
+        <div class="gallery__banner">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
             <source media="(min-width: 768px )" srcset="img/photo-sunset-tablet@1x.jpg">
-            <img class="gallery__picture--big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
+            <img class="gallery__picture-big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
           </picture>
         </div>
         <div class="gallery__wrapper-author gallery__wrapper-author--backg">
@@ -78,11 +79,11 @@
         </div>
       </div>
       <div class="gallery__content">
-        <div class="gallery__fronpage  gallery__picture--wrapper">
+        <div class="gallery__fronpage">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
             <source media="(min-width: 768px )" srcset="img/photo-cactus-tablet@1x.jpg">
-            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность">
+            <img class="gallery__picture-cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность">
           </picture>
         </div>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
@@ -148,7 +149,6 @@
         </div>
         </div>
       </div>
-      </div>
     </section>
     <div class="article">
       <h2 class="article__title">Все еще сомневаетесь?</h2>
@@ -160,7 +160,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-            <img class="filter__picture" src="img/video-mobile@1x.jpg" width="321" height="201" alt="Дорога в горы">
+            <img class="filter__picture" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Дорога в горы">
             </picture>
         <div class="filter__range-wrapper">
           <button class="filter__btn filter__btn--replay" type="button" name="button">
@@ -188,30 +188,32 @@
     <div class="page-footer__wrapper">
     <span class="page-footer__hashtag">#visitsedona</span>
     </div>
-    <ul class="social__list">
-      <li class="social__item">
-        <a class="social__link social__link--twitter" href="https://twitter.com/">
-          <svg width="19" height="15">
-            <use xlink:href="img/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">
-          <svg width="9" height="19">
-            <use xlink:href="img/sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/">
-          <svg width="20" height="14">
-            <use xlink:href="img/sprite.svg#icon-youtube"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright">
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/">
+            <svg width="19" height="15">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">
+            <svg width="9" height="19">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+            <svg width="20" height="14">
+              <use xlink:href="img/sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
       <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <svg width="27" height="34">
