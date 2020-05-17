@@ -2,11 +2,14 @@
   width: 100%;
   height: auto;
   background-image: url(../img/bg-back-mobile@1x.jpg);
-  padding: 95px 0 79px;
+  padding: 92px 0 84px;
   margin-top: -30px;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .page-banner__photo {
@@ -14,6 +17,10 @@
   padding-bottom: 67px;
   background-position: -224px -229px;
   margin-bottom: 38px;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-position: center;
+  }
 }
 
 .page-banner__triangle {
@@ -93,10 +100,6 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-  }
-
-  .page-banner__triangle--photo {
-
   }
 
   .page-banner__text-photo {

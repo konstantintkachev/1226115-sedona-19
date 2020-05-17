@@ -7,6 +7,8 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -35,10 +37,6 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
-
-var gulp = require("gulp");
-var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
 
 gulp.task("sprite", function() {
   return gulp.src("source/img/icon-*.svg")
