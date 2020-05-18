@@ -75,6 +75,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 27px;
 
+
   &::before,
   &::after {
     content: "";
@@ -96,6 +97,10 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+}
+
+.main-nav--opened {
+  display: block;
 }
 
 @media (max-width: @mobile-width-only) {
