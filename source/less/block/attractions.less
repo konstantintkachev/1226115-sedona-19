@@ -22,8 +22,6 @@
   }
 }
 
-
-
 .attractions__title {
   font-size: 18px;
   line-height: 26px;
@@ -71,7 +69,7 @@
 
   .attractions__title {
     text-align: center;
-    padding: 45px 60px 6px;
+    padding: 45px 60px 11px;
     font-size: 21px;
   }
 
@@ -80,7 +78,7 @@
   }
 
   .attractions__text {
-    margin-top: 28px;
+    margin-top: 23px;
     padding: 0 49px;
   }
 
@@ -88,16 +86,12 @@
     padding: 0 55px;
   }
 
-  .attractions__item--element {
-    &:after {
-      display: none;
-    }
+  .attractions__item--element::after {
+    display: none;
   }
 
-  .attractions__item--element {
-    &:before {
-      display: none;
-    }
+  .attractions__item--element::before {
+    display: none;
   }
 }
 
