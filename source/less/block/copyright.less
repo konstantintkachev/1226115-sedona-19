@@ -1,6 +1,14 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
+  display: block;
+  font-weight: normal;
 }
 
 .copyright__link {
@@ -13,14 +21,12 @@
 }
 
 .copyright__link:hover {
-
   svg {
     fill: #81b3d2;
   }
 }
 
 .copyright__link:active {
-
   svg {
     fill: #000000;
     opacity: 0.3;
@@ -28,16 +34,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .copyright__link {
-    text-decoration: none;
-
-    svg {
-      margin-left: 9px;
-    }
-
-    .copyright {
-      display: flex;
-      align-items: baseline;
-    }
+  .copyright {
+    margin-right: 120px;
+    margin-left: 17px;
   }
 }

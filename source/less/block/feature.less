@@ -4,7 +4,7 @@
 
 .feature__img {
   position: absolute;
-  background-image: url(../../img/white-copy-2.png);
+  background-image: url("../../img/white-copy-2.png");
   width: 320px;
   top: -7px;
   z-index: 3;
@@ -61,14 +61,7 @@
   display: block;
 }
 
-.feature-banner {
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-city-mobile@2x.jpg");
-    height: 260px;
-  }
-}
-
-.feature__banner-wrapper { /*********.feature-banner__wrapper********/
+.feature__banner-wrapper {
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/main-bridge-mobile@2x.jpg");
   }
@@ -112,13 +105,6 @@
     padding: 25px 15px 0 14px;
   }
 
-  .feature-banner {
-    height: 256px;
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-city-tablet@2x.jpg");
-    }
-  }
-
   .feature__banner-wrapper {
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/main-bridge-tablet@2x.jpg");
@@ -138,13 +124,14 @@
   .feature {
     width: 100%;
     height: auto;
+
     img {
       width: 800px;
     }
   }
 
   .feature__number {
-      padding-left: 143px;
+    padding-left: 143px;
   }
 
   .feature__number--new-number {
@@ -154,13 +141,6 @@
   .feature__text {
     padding: 23px 24px 0;
     letter-spacing: 0.5px;
-  }
-
-  .feature-banner {
-    height: 256px;
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-city-desktop@2x.jpg");
-    }
   }
 
   .feature__banner-wrapper {
@@ -186,5 +166,9 @@
 
   .feature__title--new-title {
     padding: 0 73px 0 74px;
+  }
+
+  .feature__photo-bridge {
+    object-fit: cover;
   }
 }

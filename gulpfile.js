@@ -10,11 +10,12 @@ var server = require("browser-sync").create();
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+var csso = require("gulp-csso");
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml())
-    .pipe(gulp.dest("source"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("css", function () {
@@ -25,14 +26,17 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -60,9 +64,11 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source/*.ico"
-  ], )
+  ], {
+    base: "source"
+  } )
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series("css", "sprite", "html"));
+gulp.task("build", gulp.series("css", "copy", "html"));
 gulp.task("start", gulp.series("build", "server"));

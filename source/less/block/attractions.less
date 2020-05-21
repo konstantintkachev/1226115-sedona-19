@@ -9,30 +9,26 @@
   margin: 0;
 }
 
-.attractions__item--element {
-  &:before {
-    content: "";
-    display: block;
-    height: 1px;
-    background: #333333;
-    width: 280px;
-    position: relative;
-    left: 20px;
-    opacity: 0.2;
-  }
+.attractions__item--element::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #333333;
+  width: 280px;
+  position: relative;
+  left: 20px;
+  opacity: 0.2;
 }
 
-.attractions__item--element {
-  &:after {
-    content: "";
-    display: block;
-    height: 1px;
-    background: #333333;
-    width: 280px;
-    position: relative;
-    left: 20px;
-    opacity: 0.2;
-  }
+.attractions__item--element::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #333333;
+  width: 280px;
+  position: relative;
+  left: 20px;
+  opacity: 0.2;
 }
 
 .attractions__title {
@@ -82,7 +78,7 @@
 
   .attractions__title {
     text-align: center;
-    padding: 45px 60px 6px;
+    padding: 45px 60px 11px;
     font-size: 21px;
   }
 
@@ -91,7 +87,7 @@
   }
 
   .attractions__text {
-    margin-top: 28px;
+    margin-top: 23px;
     padding: 0 49px;
   }
 
@@ -99,16 +95,12 @@
     padding: 0 55px;
   }
 
-  .attractions__item--element {
-    &:after {
-      display: none;
-    }
+  .attractions__item--element::after {
+    display: none;
   }
 
-  .attractions__item--element {
-    &:before {
-      display: none;
-    }
+  .attractions__item--element::before {
+    display: none;
   }
 }
 

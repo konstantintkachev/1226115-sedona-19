@@ -1,0 +1,31 @@
+.feature-banner {
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main-city-mobile@2x.jpg");
+    height: 260px;
+  }
+}
+
+.feature-banner__photo-city {
+  object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .feature-banner {
+    height: 256px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature-banner {
+    height: 256px;
+
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+  }
+}
