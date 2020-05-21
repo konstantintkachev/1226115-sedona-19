@@ -1,7 +1,14 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
   display: block;
+  font-weight: normal;
 }
 
 .copyright__link {
@@ -27,15 +34,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .copyright__link {
-    text-decoration: none;
-
-    svg {
-      margin-left: 11px;
-    }
-  }
-
   .copyright {
-    display: flex;
+    margin-right: 120px;
+    margin-left: 17px;
   }
 }
