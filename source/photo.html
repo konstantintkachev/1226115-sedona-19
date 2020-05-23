@@ -55,13 +55,13 @@
     <section class="gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class="gallery__content gallery__pictures-big">
-        <div class="gallery__banner">
+        <a class="gallery__banner" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
             <source media="(min-width: 768px )" srcset="img/photo-sunset-tablet@1x.jpg">
             <img class="gallery__picture-big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
           </picture>
-        </div>
+        </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--backg">
           <div class="gallery__author">
             <b class="gallery__name">Неродные просторы</b>
@@ -78,13 +78,13 @@
         </div>
       </div>
       <div class="gallery__content">
-        <div class="gallery__fronpage">
+        <a class="gallery__fronpage" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
             <source media="(min-width: 768px )" srcset="img/photo-cactus-tablet@1x.jpg">
             <img class="gallery__picture-cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность">
           </picture>
-        </div>
+        </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
           <div class="gallery__author">
             <b class="gallery__name">Местная растительность</b>
@@ -102,13 +102,13 @@
       </div>
 
       <div class="gallery__content">
-        <div class="gallery__fronpage gallery__wrapper-roads">
+        <a class="gallery__fronpage gallery__wrapper-roads" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
             <source media="(min-width: 768px )" srcset="img/photo-roads-tablet@1x.jpg">
             <img class="gallery__picture gallery__picture--roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
         </picture>
-        </div>
+        </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
           <div class="gallery__author">
             <b class="gallery__name">Дорога на север</b>
@@ -126,13 +126,13 @@
 
       </div>
       <div class="gallery__content gallery__content--small">
-        <div class="gallery__fronpage gallery__wrapper-bridge">
+        <a class="gallery__fronpage gallery__wrapper-bridge" href="#">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
           <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
           <img class="gallery__picture gallery__picture--bridge" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
         </picture>
-        </div>
+        </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
           <div class="gallery__author">
           <b class="gallery__name">Мост дьявола</b>
@@ -155,7 +155,7 @@
       </p>
     </div>
     <div class="filter">
-      <div class="filter__wrapper">
+      <a class="filter__wrapper" href="#">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
@@ -179,7 +179,7 @@
               </svg>
             </button>
         </div>
-      </div>
+      </a>
     </div>
   </main>
 
@@ -221,6 +221,8 @@
       </a>
     </div>
   </footer>
+  <script src="/js/svg4everybody.min"></script>
+  <script src="/js/picturefill.min"></script>
   <script src="/js/script.js"></script>
 </body>
 
