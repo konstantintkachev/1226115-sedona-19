@@ -13,10 +13,6 @@
 
 .gallery__picture-big {
   margin: 24px 0 11px 20px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/photo-sunset-mobile@2x.jpg");
-  }
 }
 
 .gallery__picture {
@@ -45,10 +41,8 @@
 .gallery__like {
   text-decoration: none;
   color: #000000;
-
-  img {
-    margin-top: 5px;
-  }
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
 .gallery__number {
@@ -60,30 +54,21 @@
 
 .gallery__picture-cactus {
   margin-bottom: 12px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/photo-cactus-mobile@2x.jpg");
-  }
 }
 
 .gallery__picture--roads {
   margin-bottom: 12px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/photo-roads-mobile@2x.jpg");
-  }
 }
 
 .gallery__picture--bridge {
   margin-bottom: 12px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/photo-bridge-mobile@2x.jpg");
-  }
+  margin-left: 0;
+  width: 280px;
+  height: 280px;
+  background-position: center;
 }
 
 .gallery__wrapper-like {
-  margin-left: 20px;
   padding-top: 5px;
 }
 
@@ -108,12 +93,6 @@
 
 .gallery__wrapper-like--block-three {
   margin-bottom: 16px;
-}
-
-.filter__picture {
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/video-mobile@2x.jpg");
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -175,34 +154,12 @@
     margin-left: 5px;
   }
 
-  .gallery__banner {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-sunset-tablet@2x.jpg");
-    }
-  }
-
   .gallery__fronpage {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-cactus-tablet@2x.jpg");
-    }
-
     img {
       width: 324px;
       height: 267px;
       display: block;
       margin: 0;
-    }
-  }
-
-  .gallery__wrapper-roads {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-roads-tablet@2x.jpg");
-    }
-  }
-
-  .gallery__wrapper-bridge {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-bridge-tablet@2x.jpg");
     }
   }
 
@@ -240,36 +197,14 @@
   }
 
   .gallery__banner {
-    width: 1200px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-sunset-desktop@2x.jpg");
-    }
-
-    .gallery__picture-big {
+    img {
       width: 1200px;
     }
   }
 
   .gallery__fronpage {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-cactus-desktop@2x.jpg");
-    }
-
     img {
       width: 400px;
-    }
-  }
-
-  .gallery__wrapper-roads {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-roads-desktop@2x.jpg");
-    }
-  }
-
-  .gallery__wrapper-bridge {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/photo-bridge-desktop@2x.jpg");
     }
   }
 

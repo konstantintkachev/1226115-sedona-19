@@ -4,9 +4,9 @@
   box-sizing: border-box;
   position: relative;
 
-  .search-form__desc .search-form__desc{
+  .search-form__desc .search-form__desc {
     padding-left: 0;
-   }
+  }
 }
 
 .search-form__title {
@@ -17,6 +17,7 @@
 
 .search-form__desc-wrapper {
   margin: 0;
+  padding: 0;
 }
 
 .search-form__field-name {
@@ -39,6 +40,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;
+  padding: 0;
 }
 
 .search-form__memo {
@@ -153,7 +155,7 @@
   background-color: #e6e6e6;
   position: absolute;
   top: -20px;
-  left: -20px;
+  left: 0;
 }
 
 .search-form__desc-block-first::after {
@@ -163,7 +165,7 @@
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  left: -20px;
+  left: 0;
   top: 285px;
 }
 
@@ -174,7 +176,7 @@
   height: 1px;
   background-color: #e6e6e6;
   position: absolute;
-  left: -20px;
+  left: 0;
   bottom: -15px;
 }
 
@@ -263,7 +265,7 @@
 
 .search-form__title-fourth {
   margin-top: 44px;
-  padding-right: 43px;
+  padding-right: 20px;
 }
 
 .search-form__input {
@@ -287,7 +289,7 @@
   content: "";
   width: 50px;
   height: 50px;
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   position: absolute;
   background-position: center;
@@ -373,6 +375,7 @@
     flex-direction: column;
     box-sizing: border-box;
     margin: 0;
+    padding-left: 0;
   }
 
   .search-form__desc-block-first {
@@ -382,6 +385,7 @@
     flex-direction: column;
     box-sizing: border-box;
     margin: 0;
+    padding-left: 0;
 
     &::before {
       content: "";
@@ -441,6 +445,8 @@
     flex-direction: column;
     margin: 0;
     width: 100%;
+    padding-left: 0;
+    flex-wrap: wrap;
   }
 
   .search-form__title-second {
@@ -506,6 +512,7 @@
     width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-left: 0;
   }
 
   .search-form__desc--wrapper-fourth {
@@ -570,6 +577,7 @@
     flex-direction: column;
     margin: 0;
     width: 100%;
+    padding-left: 0;
   }
 
   .search-form__title-fifth {

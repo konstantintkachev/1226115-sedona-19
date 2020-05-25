@@ -10,27 +10,27 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" aria-label="Перейти на главную">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button" aria-label="Кнопка открыть меню"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="#">Главная</a>
+            <a href="#" aria-label="Перейти на главную">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">Фото и видео</a>
+            <a href="photo.html" aria-label="Перейти на Фото и Видео">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a href="form.html" aria-label="Перейти на Форму">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/study">HTML Academy</a>
+            <a href="https://htmlacademy.ru/study" aria-label="Перейти на сайт Academy">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -97,9 +97,9 @@
         </div>
         <div class="feature__banner-wrapper">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-          <img class="feature__photo-bridge" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+          <img class="feature__photo-bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост">
         </picture>
         </div>
       </div>
@@ -131,16 +131,17 @@
         <p class="offer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
         </p>
       </div>
-      <div class="offer__toggle">
-        <a href="#">Найти гостиницу</a>
-      </div>
+      <a class="offer__toggle" href="search.html" aria-label="Кнопка найти гостиницу">Найти гостиницу</a>
       <div class="map-banner">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838157.8360517193!2d-112.35549774475408!3d34.85486926877189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1560516137746!5m2!1sru!2sru" width="320" height="350" allowfullscreen=""></iframe>
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-          ><img src="img/bg-map-mobile@1x.jpg" alt="Карта">
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта">
         </picture>
+        <svg width="27" height="27">
+          <use xlink:href="img/sprite.svg#icon-map-marker"></use>
+        </svg>
       </div>
     </section>
   </main>
@@ -152,21 +153,21 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/">
+          <a class="social__link social__link--twitter" aria-label="Перейти на twitter" href="https://twitter.com/">
             <svg width="19" height="15">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">
+          <a class="social__link social__link--facebook" aria-label="Перейти на facebook" href="https://ru-ru.facebook.com/">
             <svg width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+          <a class="social__link social__link--youtube" aria-label="Перейти на youtube" href="https://www.youtube.com/">
             <svg width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
@@ -176,7 +177,7 @@
     </div>
     <div class="copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Копирайтинг Academy">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
         </svg>

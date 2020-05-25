@@ -18,7 +18,6 @@
   padding: 0;
   box-sizing: border-box;
   height: 235px;
-  display: block;
 }
 
 .feature__wrapper--new-wrapper {
@@ -61,12 +60,6 @@
   display: block;
 }
 
-.feature__banner-wrapper {
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-bridge-mobile@2x.jpg");
-  }
-}
-
 @media (min-width: @tablet-width) {
   .feature {
     display: flex;
@@ -105,12 +98,6 @@
     padding: 25px 15px 0 14px;
   }
 
-  .feature__banner-wrapper {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-bridge-tablet@2x.jpg");
-    }
-  }
-
   .feature__text--new-text {
     padding: 23px 12px 0 13px;
   }
@@ -141,12 +128,6 @@
   .feature__text {
     padding: 23px 24px 0;
     letter-spacing: 0.5px;
-  }
-
-  .feature__banner-wrapper {
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-bridge-desktop@2x.jpg");
-    }
   }
 
   .feature__wrapper--new-wrapper {

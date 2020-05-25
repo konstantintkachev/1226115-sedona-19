@@ -10,27 +10,27 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
+    <a class="page-header__logo" aria-label="Перейти на главную" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
         <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
       </picture>
     </a>
     <nav class="main-nav main-nav--opened main-nav--nojs">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden" aria-label="Кнопка открыть меню">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a href="index.html" aria-label="Перейти на главную">Главная</a>
           </li>
           <li class="main-nav__item main-nav__item--active">
-            <a href="#">Фото и видео</a>
+            <a href="#" aria-label="Перейти на Фото и Видео">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
+            <a href="form.html" aria-label="Перейти на Форму">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/study">HTML Academy</a>
+            <a href="https://htmlacademy.ru/study" aria-label="Перейти на сайт Academy">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -55,11 +55,11 @@
     <section class="gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <div class="gallery__content gallery__pictures-big">
-        <a class="gallery__banner" href="#">
+        <a class="gallery__banner" aria-label="Открыть фото" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-            <source media="(min-width: 768px )" srcset="img/photo-sunset-tablet@1x.jpg">
-            <img class="gallery__picture-big" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат">
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px )" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+            <img class="gallery__picture-big" src="img/photo-sunset-mobile@1x.jpg" srcset="img//photo-sunset-mobile@2x.jpg 2x" alt="Закат">
           </picture>
         </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--backg">
@@ -68,7 +68,7 @@
             <span class="gallery__author-name">Автор фото: Борис</span>
           </div>
           <div class="gallery__wrapper gallery__wrapper-like">
-              <a class="gallery__like" href="#">
+              <a class="gallery__like" aria-label="Поставить лайк" href="#">
                 <svg width="22" height="20">
                   <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
@@ -78,11 +78,11 @@
         </div>
       </div>
       <div class="gallery__content">
-        <a class="gallery__fronpage" href="#">
+        <a class="gallery__fronpage" aria-label="Открыть фото" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-            <source media="(min-width: 768px )" srcset="img/photo-cactus-tablet@1x.jpg">
-            <img class="gallery__picture-cactus" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Растительность">
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px )" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+            <img class="gallery__picture-cactus" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Растительность">
           </picture>
         </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
@@ -91,7 +91,7 @@
             <span class="gallery__author-name">Автор фото: Сергей</span>
           </div>
           <div class="gallery__wrapper gallery__wrapper-like gallery__wrapper-like--block">
-            <a class="gallery__like" href="#">
+            <a class="gallery__like" href="#" aria-label="Поставить лайк">
               <svg width="22" height="20">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
@@ -102,11 +102,11 @@
       </div>
 
       <div class="gallery__content">
-        <a class="gallery__fronpage gallery__wrapper-roads" href="#">
+        <a class="gallery__fronpage gallery__wrapper-roads" href="#" aria-label="Открыть фото">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-            <source media="(min-width: 768px )" srcset="img/photo-roads-tablet@1x.jpg">
-            <img class="gallery__picture gallery__picture--roads" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px )" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+            <img class="gallery__picture gallery__picture--roads" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
         </picture>
         </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
@@ -115,7 +115,7 @@
             <span class="gallery__author-name">Автор фото: Петр</span>
           </div>
           <div class="gallery__wrapper gallery__wrapper-like gallery__wrapper-like--block-two">
-            <a class="gallery__like" href="#">
+            <a class="gallery__like" href="#" aria-label="Поставить лайк">
               <svg width="22" height="20">
                 <use xlink:href="img/sprite.svg#icon-like"></use>
               </svg>
@@ -126,11 +126,11 @@
 
       </div>
       <div class="gallery__content gallery__content--small">
-        <a class="gallery__fronpage gallery__wrapper-bridge" href="#">
+        <a class="gallery__fronpage gallery__wrapper-bridge" href="#" aria-label="Открыть фото">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg">
-          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg">
-          <img class="gallery__picture gallery__picture--bridge" src="img/main-bridge-mobile@1x.jpg" width="280" height="280" alt="Дорога на север">
+          <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+          <img class="gallery__picture gallery__picture--bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
         </picture>
         </a>
         <div class="gallery__wrapper-author gallery__wrapper-author--block">
@@ -139,7 +139,7 @@
           <span class="gallery__author-name">Автор фото: Антон</span>
           </div>
         <div class="gallery__wrapper gallery__wrapper-like gallery__wrapper-like--block-three">
-          <a class="gallery__like" href="#">
+          <a class="gallery__like" href="#" aria-label="Поставить лайк">
             <svg width="22" height="20">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
@@ -155,25 +155,25 @@
       </p>
     </div>
     <div class="filter">
-      <a class="filter__wrapper" href="#">
+      <a class="filter__wrapper" href="#" aria-label="Посмотреть видео">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
-            <img class="filter__picture" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Дорога в горы">
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="filter__picture" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Дорога в горы">
             </picture>
         <div class="filter__range-wrapper">
-          <button class="filter__btn filter__btn--replay" type="button" name="button">
+          <button class="filter__btn filter__btn--replay" type="button" name="button" aria-label="Повтор">
             <svg width="16" height="20">
               <use xlink:href="img/sprite.svg#icon-video-replay"></use>
             </svg>
           </button>
           <div class="filter__range"></div>
-          <button class="filter__btn filter__btn--subtitles" type="button" name="button">
+          <button class="filter__btn filter__btn--subtitles" type="button" name="button" aria-label="Субтитры">
             <svg width="32" height="20">
               <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
             </svg>
             </button>
-            <button class="filter__btn filter__btn--video-mobile" type="button" name="button">
+            <button class="filter__btn filter__btn--video-mobile" type="button" name="button" aria-label="На полный экран">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
               </svg>
@@ -190,21 +190,21 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com/">
+          <a class="social__link social__link--twitter" aria-label="Перейти на twitter" href="https://twitter.com/">
             <svg width="19" height="15">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com/">
+          <a class="social__link social__link--facebook" aria-label="Перейти на facebook" href="https://ru-ru.facebook.com/">
             <svg width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/">
+          <a class="social__link social__link--youtube" aria-label="Перейти на youtube" href="https://www.youtube.com/">
             <svg width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
@@ -214,7 +214,7 @@
     </div>
     <div class="copyright">
       <span class="copyright__text">Разработано</span>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Копирайтинг Academy">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
           <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
         </svg>
