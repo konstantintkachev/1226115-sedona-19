@@ -1,3 +1,4 @@
+svg4everybody();
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 

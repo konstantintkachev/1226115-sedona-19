@@ -1,14 +1,30 @@
 .map-banner {
   margin-bottom: 30px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    z-index: 3;
+    left: 147px;
+    top: 159px;
+  }
 
   iframe {
     border: 0;
+    position: absolute;
+    z-index: 4;
+    display: block;
   }
 }
 
 @media (min-width: @tablet-width) {
   .map-banner {
     margin-bottom: 32px;
+
+    svg {
+      left: 370px;
+      top: 165px;
+    }
 
     iframe {
       width: 768px;
@@ -19,6 +35,10 @@
 @media (min-width: @desktop-width) {
   .map-banner {
     margin-bottom: 30px;
+
+    svg {
+      left: 586px;
+    }
 
     iframe {
       width: 1200px;

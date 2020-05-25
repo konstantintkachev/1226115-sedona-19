@@ -23,23 +23,19 @@
   width: 280px;
   height: 58px;
   background-color: @light-grey-blue;
-  text-transform: uppercase;
+  text-transform: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   font-family: inherit;
-  outline: 0;
   border: 0;
   margin: 0 0 50px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .offer__toggle:hover {
@@ -48,10 +44,7 @@
 
 .offer__toggle:active {
   background-color: #5496bd;
-
-  a {
-    color: rgba(255, 255, 255, 0.3);
-  }
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: @tablet-width) {
