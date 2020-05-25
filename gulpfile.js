@@ -11,6 +11,13 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var csso = require("gulp-csso");
+var webp = require("gulp-webp");
+
+gulp.task("webp", function() {
+  return gulp.src("source/img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")

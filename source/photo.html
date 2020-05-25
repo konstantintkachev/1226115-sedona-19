@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -57,6 +58,10 @@
       <div class="gallery__content gallery__pictures-big">
         <a class="gallery__banner" aria-label="Открыть фото" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px )" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
             <img class="gallery__picture-big" src="img/photo-sunset-mobile@1x.jpg" srcset="img//photo-sunset-mobile@2x.jpg 2x" alt="Закат">
@@ -80,6 +85,10 @@
       <div class="gallery__content">
         <a class="gallery__fronpage" aria-label="Открыть фото" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
             <source media="(min-width: 768px )" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
             <img class="gallery__picture-cactus" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Растительность">
@@ -104,6 +113,10 @@
       <div class="gallery__content">
         <a class="gallery__fronpage gallery__wrapper-roads" href="#" aria-label="Открыть фото">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
             <source media="(min-width: 768px )" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
             <img class="gallery__picture gallery__picture--roads" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
@@ -128,6 +141,10 @@
       <div class="gallery__content gallery__content--small">
         <a class="gallery__fronpage gallery__wrapper-bridge" href="#" aria-label="Открыть фото">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+
           <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
           <img class="gallery__picture gallery__picture--bridge" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
@@ -155,8 +172,12 @@
       </p>
     </div>
     <div class="filter">
-      <a class="filter__wrapper" href="#" aria-label="Посмотреть видео">
+      <div class="filter__wrapper" href="#" aria-label="Посмотреть видео">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="filter__picture" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Дорога в горы">
@@ -172,14 +193,14 @@
             <svg width="32" height="20">
               <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
             </svg>
-            </button>
-            <button class="filter__btn filter__btn--video-mobile" type="button" name="button" aria-label="На полный экран">
-              <svg width="20" height="20">
-                <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
-              </svg>
-            </button>
+          </button>
+          <button class="filter__btn filter__btn--video-mobile" type="button" name="button" aria-label="На полный экран">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+            </svg>
+          </button>
         </div>
-      </a>
+      </div>
     </div>
   </main>
 
@@ -221,8 +242,8 @@
       </a>
     </div>
   </footer>
-  <script src="/js/svg4everybody.min"></script>
-  <script src="/js/picturefill.min"></script>
+  <script src="/js/svg4everybody.min.js"></script>
+  <script src="/js/picturefill.min.js"></script>
   <script src="/js/script.js"></script>
 </body>
 
