@@ -710,8 +710,11 @@
 
   .search-form__field-name--facts {
     padding: 0;
-    width: 30%;
     margin-left: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
   }
 
   .search-form__field-name-hidden {
@@ -719,17 +722,20 @@
   }
 
   .search-form__field-name--email {
-    margin-left: 132px;
+    margin-left: 0;
   }
 
   .search-form__user-editor {
-    width: 263px;
-    margin-left: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 317px;
+    margin-left: 14px;
   }
 
   .search-form__wrapper-icon {
-    top: -22px;
-    left: 342px;
+    left: inherit;
+    right: 0;
+    top: 0;
   }
 
   .search-form__wrapper-icon--img {
@@ -832,5 +838,16 @@
     width: 480px;
     margin-bottom: 104px;
     padding: 0;
+  }
+
+  .search-form__desc.search-form__desc-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .search-form__title.search-form__title-second {
+    width: 100%;
+    margin-bottom: 75px;
   }
 }
