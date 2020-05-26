@@ -17,11 +17,11 @@
   width: 320px;
   padding: 0;
   box-sizing: border-box;
-  height: 235px;
+  min-height: 235px;
 }
 
 .feature__wrapper--new-wrapper {
-  height: 191px;
+  min-height: 191px;
 }
 
 .feature__title {
@@ -76,7 +76,7 @@
 
   .feature__wrapper {
     width: 256px;
-    height: 256px;
+    min-height: 256px;
     padding: 45px 38px 0 37px;
   }
 
@@ -110,7 +110,7 @@
 @media (min-width: @desktop-width) {
   .feature {
     width: 100%;
-    height: auto;
+    min-height: 256px;
 
     img {
       width: 800px;
@@ -133,12 +133,14 @@
   .feature__wrapper--new-wrapper {
     padding-left: 51px;
     padding-right: 52px;
+    min-height: 256px;
   }
 
   .feature__wrapper {
     width: 400px;
-    height: 256px;
+    min-height: 256px;
     padding-top: 52px;
+    padding-bottom: 30px;
   }
 
   .feature__title {
